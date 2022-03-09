@@ -11,6 +11,7 @@ body {
 }
 
 h2.title {
+  min-width: 550px;
   padding: 0.2rem 0 0.2rem;
   margin: 0.2rem 0.5rem 0.2rem 0.5rem;
   text-align: center;
@@ -30,11 +31,13 @@ main {
   display: flex;
   justify-content: center;
   flex-flow: row nowrap;
-  height: 80%;
+  height: 85%;
+  width: 100%;
 }
 
 .menu {
-  width: 5rem;
+  width: 15%;
+  min-width: 6rem;
   flex-flow: row nowrap;
   height: 100%;
   padding-top: 0.3rem;
@@ -46,13 +49,14 @@ main {
 
 .menu > a {
   display: inline-block;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 600;
   color: rgb(109, 105, 105);
   padding: 0.3rem 0 0 0.3rem;
 }
 
 .items {
+  overflow-y: scroll;
   width: 85%;
   height: 100%;
   margin: 0.5rem 0.5rem 0 0;
@@ -63,26 +67,28 @@ main {
 
 .item {
   border-radius: 0.3rem;
-  margin: 0.6rem 0.2rem 0 0.4rem;
-  padding: 0.4rem;
+  margin: 0.6rem 0.2rem 0 0.6rem;
+  padding: 0.6rem;
   background: #fff0f5;
   display: inline-block;
-  box-shadow: 0.1rem 0.1rem 0.3rem #cfadb9;
+  box-shadow: 0.2rem 0.2rem 0.5rem #cfadb9;
 }
 
-.item > h6 {
+.item > h5 {
   margin: 0.3rem 0 0 0.1rem;
 }
 
 .item > p {
-  font-size: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 500;
   margin: 0.3rem 0 0.3rem 0.1rem;
 }
 
 .image {
-  height: 120px;
-  width: 80px;
+  height: 160px;
+  width: 120px;
   image-rendering: auto;
+  border-radius: 0.3rem;
 }
 
 .author {
@@ -91,46 +97,26 @@ main {
   padding-bottom: 1rem;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 2000px) {
   .item {
-    background: #ffeaf1;
+    background: #e0ffc3;
   }
-}
 
-@media (max-width: 1000px) {
-  h2.title {
-    font-size: 1.2rem;
-    padding: 0.5rem 0 0.4rem;
+  @media (max-width: 1500px) {
+    .item {
+      background: #ffeaf1;
+    }
   }
-  .item {
-    background: #90bfe5;
-  }
-}
 
-@media (max-width: 700px) {
-  h2.title {
-    font-size: 1rem;
-    padding: 0.6rem 0 0.4rem;
+  @media (max-width: 1000px) {
+    .item {
+      background: #b4beff;
+    }
   }
-  .menu > a {
-    display: inline-block;
-    font-size: 0.6rem;
-  }
-  .item {
-    background: #e7e18a;
-  }
-}
 
-@media (max-width: 320px) {
-  h2.title {
-    font-size: 1rem;
-    padding: 0.6rem 0 0.4rem;
-  }
-  .menu > a {
-    display: inline-block;
-    font-size: 0.6rem;
-  }
-  .item {
-    background: #b4e982;
+  @media (max-width: 700px) {
+    .item {
+      background: #e7e18a;
+    }
   }
 }
