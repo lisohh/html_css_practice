@@ -103,25 +103,22 @@ main {
   .item {
     background: #e0ffc3;
   }
+}
 
-  @media (max-width: 1000px) {
-    .item {
-      background: #ffeaf1;
-    }
+@media (max-width: 1000px) {
+  .item {
+    background: #ffeaf1;
   }
+}
 
-  @media (max-width: 700px) {
-    .item {
-      background: #b4beff;
-    }
+@media (max-width: 700px) {
+  .item {
+    background: #b4beff;
   }
+}
 
-  @media (max-width: 320px) {
-    h3.title {
-      font-size: 0.8rem;
-    }
-    .item {
-      background: #e7e18a;
-    }
+@media (max-width: 320px) {
+  .item {
+    background: #e7e18a;
   }
 }
