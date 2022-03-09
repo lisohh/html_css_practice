@@ -37,7 +37,7 @@ main {
 
 .menu {
   width: 15%;
-  min-width: 6rem;
+  min-width: 10rem;
   flex-flow: row nowrap;
   height: 100%;
   padding-top: 1rem;
