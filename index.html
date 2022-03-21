@@ -71,9 +71,9 @@
       </div>
     </main>
 
-    <div class="modalBackground" id="modal">
+    <article class="modalBackground" id="modal">
       <form class="modal" id="addItemForm">
-        <span class="modalClose" id="closeModal">X</span>
+        <span class="modalClose" id="closeModal">닫기</span>
         <label for="name" class="label">맛의 이름은?</label>
         <input
           id="name"
@@ -98,8 +98,9 @@
           placeholder="호불호는 있지만 꾸준한 인기!"
           class="input"
           required
+          maxlength="30"
         />
-        <button type="submit" class="submitButton">저장하기</button>
+        <button type="submit" class="submitButton">맛 저장하기</button>
       </form>
     </div>
 

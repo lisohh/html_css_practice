@@ -1,22 +1,22 @@
 function addItem(name, image, content) {
-  const div = document.createElement("div");
-  div.classList.add("card");
-  div.innerHTML = `
-            <img src="${image}" alt="${name}" />
-            <span>${content}</span>
-        `;
-  document.querySelector("#container").appendChild(div);
+  const article = document.createElement("article");
+  article.classList.add("item");
+  article.innerHTML = `
+          <img src="${image}" alt="${name}" />
+          <p>${content}</p>
+      `;
+  document.querySelector(".items").appendChild(article);
 
-  const span = document.createElement("span");
-  span.innerHTML = name;
-  document.querySelector("#sidebar").appendChild(span);
+  const a = document.createElement("a");
+  a.innerHTML = name;
+  document.querySelector("#menu").appendChild(a);
 }
 
 function addItemHandle(e) {
   e.preventDefault();
-  const name = document.getElementById("name").value;
-  const image = document.getElementById("image").value;
-  const content = document.getElementById("content").value;
+  const name = addItemForm.querySelector("input #name");
+  const image = addItemForm.querySelector("input #image");
+  const content = addItemForm.querySelector("input #content");
   addItem(name, image, content);
   closeModal();
 }
