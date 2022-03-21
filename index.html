@@ -14,6 +14,7 @@
     </header>
     <main>
       <nav class="menu">
+        <button type="button" class="addButton" id="addItem">추가</button><br />
         <a>바닐라 🥞</a><br />
         <a>초코 🍫</a><br />
         <a>순수우유 🥛</a><br />
@@ -69,6 +70,41 @@
         </article>
       </div>
     </main>
+
+    <div class="modalBackground" id="modal">
+      <form class="modal" id="addItemForm">
+        <span class="modalClose" id="closeModal">X</span>
+        <label for="name" class="label">이름</label>
+        <input
+          id="name"
+          type="text"
+          placeholder="민트초코"
+          class="input"
+          maxlength="10"
+          required
+        />
+        <label for="image" class="label">이미지</label>
+        <input
+          id="image"
+          type="text"
+          placeholder="URL"
+          class="input"
+          required
+        />
+        <label for="content" class="label">내용</label>
+        <input
+          id="content"
+          type="text"
+          placeholder="호불호는 있지만 꾸준한 인기!"
+          class="input"
+          required
+        />
+        <button type="submit" class="submitButton">저장하기</button>
+      </form>
+    </div>
+
+    <script src="./modal.js"></script>
+    <script src="./addItem.js"></script>
     <footer>
       <h6 class="author">lisoh 2022 @ GRJ Study</h6>
     </footer>
