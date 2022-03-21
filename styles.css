@@ -125,9 +125,9 @@ main {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 15px 20px 20px 0;
+  padding: 20px 20px 20px 0;
   font-weight: 500;
-  font-size: 26px;
+  font-size: 20px;
   cursor: pointer;
   z-index: 12;
   color: plum;

@@ -1,6 +1,7 @@
 function addItem(name, image, content) {
   const article = document.createElement("article");
   article.classList.add("item");
+  article.id = name;
   article.innerHTML = `
           <img class="image" src="${image}" alt="${name}" />
           <h3>${name}</h3>
