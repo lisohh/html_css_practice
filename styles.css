@@ -64,7 +64,7 @@ main {
   font-weight: 700;
   cursor: pointer;
   border: none;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .submitButton:hover {
@@ -72,10 +72,9 @@ main {
 }
 
 .label {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   margin-bottom: 12px;
-  margin-top: 16px;
   padding-left: 6px;
   color: #1b1428;
 }
@@ -112,8 +111,9 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 420px;
-  height: 500px;
+  min-width: 320px;
+  width: 300px;
+  height: 440px;
   background-color: white;
   box-shadow: 0 0 1rem #1b1428;
   border-radius: 10px;
