@@ -2,7 +2,8 @@ function addItem(name, image, content) {
   const article = document.createElement("article");
   article.classList.add("item");
   article.innerHTML = `
-          <img src="${image}" alt="${name}" />
+          <img class="image" src="${image}" alt="${name}" />
+          <h3>${name}</h3>
           <p>${content}</p>
       `;
   document.querySelector(".items").appendChild(article);
@@ -14,9 +15,9 @@ function addItem(name, image, content) {
 
 function addItemHandle(e) {
   e.preventDefault();
-  const name = addItemForm.querySelector("input #name");
-  const image = addItemForm.querySelector("input #image");
-  const content = addItemForm.querySelector("input #content");
+  const name = addItemForm.querySelector("#name").value;
+  const image = addItemForm.querySelector("#image").value;
+  const content = addItemForm.querySelector("#content").value;
   addItem(name, image, content);
   closeModal();
 }
